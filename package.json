@@ -42,12 +42,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/git-track-new-file.git"
+    "url": "https://github.com/luoling8192/git-track-new-file.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/git-track-new-file/issues"
+    "url": "https://github.com/luoling8192/git-track-new-file/issues"
   },
-  "homepage": "https://github.com/your-username/git-track-new-file#readme",
+  "homepage": "https://github.com/luoling8192/git-track-new-file#readme",
   "license": "MIT",
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
