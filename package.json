@@ -3,7 +3,7 @@
   "displayName": "Git Track New File",
   "description": "Automatically add new files to git when created in workspace",
   "version": "0.0.1",
-  "publisher": "RainbowBird",
+  "publisher": "unbirdev",
   "engines": {
     "vscode": "^1.103.0"
   },
