@@ -1,0 +1,74 @@
+{
+  "name": "git-track-new-file",
+  "displayName": "Git Track New File",
+  "description": "Automatically add new files to git when created in workspace",
+  "version": "0.0.1",
+  "publisher": "RainbowBird",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "SCM Providers"
+  ],
+  "keywords": [
+    "git",
+    "auto-add",
+    "file-tracking",
+    "version-control"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Git Track New File",
+      "properties": {
+        "gitTrackNewFile.showNotifications": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show notification when a file is auto-added to git"
+        },
+        "gitTrackNewFile.excludePatterns": {
+          "type": "array",
+          "default": [],
+          "description": "Additional patterns to exclude from auto-adding (beyond .gitignore)",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/git-track-new-file.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/git-track-new-file/issues"
+  },
+  "homepage": "https://github.com/your-username/git-track-new-file#readme",
+  "license": "MIT",
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.103.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.32.0",
+    "typescript": "^5.9.2",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  },
+  "packageManager": "pnpm@10.14.0"
+}
