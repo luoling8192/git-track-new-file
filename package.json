@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "publisher": "unbirdev",
   "engines": {
-    "vscode": "^1.103.0"
+    "vscode": "^1.99.0"
   },
   "categories": [
     "SCM Providers"
@@ -60,7 +60,7 @@
     "publish": "vsce publish"
   },
   "devDependencies": {
-    "@types/vscode": "^1.103.0",
+    "@types/vscode": "^1.99.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
     "@typescript-eslint/eslint-plugin": "^8.39.0",
